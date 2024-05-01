@@ -1,0 +1,4 @@
+polars
+ruff
+pytest
+pre-commit
