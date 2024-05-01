@@ -1,6 +1,14 @@
 import polars as pl
+import pytest
 from polars.testing import assert_frame_equal
 from rhipo.utils import cols_merge_as_str
+
+
+def test_cols_merge_as_str_raises():
+    with pytest.raises(ValueError) as exc_info:
+        cols_merge_as_str()
+
+    assert "No expressions are given" in exc_info.value.args[0]
 
 
 def test_cols_merge_as_str():
