@@ -1,4 +1,5 @@
 polars
 ruff
 pytest
+pytest-cov
 pre-commit
